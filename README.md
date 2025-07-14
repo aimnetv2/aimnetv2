@@ -59,7 +59,7 @@ I’m currently looking for:
 
 ## 📺 Demo Video
 
-> 🔗 Watch the showcase here: [YouTube link]
+> 🔗 Watch the showcase here: [(https://youtu.be/I5IRE8fC2_Q)]
 
 ---
 
