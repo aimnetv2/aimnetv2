@@ -45,6 +45,43 @@ This allows us to transform gameplay into data readable by machine learning mode
 
 ---
 
+
+🧠 Learning Phases of aimnetv2 AI
+Phase 1 – Observation Learning (Supervised Learning)
+In this initial stage, the AI passively observes gameplay from professional 1v1 Fortnite fights.
+Using structured logs (inputs, timings, positions), the model learns to recognize and replicate human behavior and mechanical patterns such as:
+
+Edit + Shot sequences
+
+Wall takes
+
+Build-and-replace moves
+
+General movement and rhythm
+
+📌 Approx. 10 hours of pro gameplay are used to train the model in this phase.
+
+🔸 Goal: Give the AI a mechanical and tactical foundation
+🔸 Expected Skill Level: Creative Newbie → Low Arena tier
+
+Phase 2 – Self-Play Reinforcement (3 Months)
+Once the AI has learned the basics, it enters a self-play loop where it trains by fighting against copies of itself — up to 50 simultaneous 1v1s in a custom environment.
+
+Each match produces rewards, failures, and feedback that help it improve over time.
+
+🧠 Over 3 months of continuous training, the AI evolves through:
+
+Week 1: Learns basic defense and rush strategies (Arena Silver)
+
+Week 2: Begins using boxfights and edit-peeks (Arena Gold)
+
+Week 4: Adapts to different opponents and meta (Arena Platinum)
+
+Month 2: Consistently wins against earlier versions of itself (Champion League)
+
+Month 3: Shows emergent behavior and high-level play (Top Creative Warrior)
+
+
 ## 🤝 Looking for contributors
 
 I’m currently looking for:
