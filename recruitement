@@ -1,0 +1,79 @@
+
+
+
+# 🤖 AI Developer Wanted – Phase 1 (Supervised Learning)
+
+**Project:** aimnetv2 – Teaching an AI to learn Fortnite 1v1 mechanics by watching pro players.
+
+## 📌 Phase 1 – Learn by Watching
+
+The goal of this phase is to train an AI model to understand and reproduce Fortnite gameplay actions by analyzing:
+
+- Pro 1v1 footage (POV recordings)
+- Corresponding keyboard/mouse input logs (`fortbot_inputs_log.txt`)
+- Timestamps to synchronize actions and game states
+
+We already have:
+- A sample demo and GitHub project initialized
+- Plans for scaling to self-play in Phase 2
+
+## 🔍 Looking for someone who can:
+
+- Build a supervised learning model that maps **inputs to screen behavior**
+- Train on labeled data (key presses, mouse events, POV footage)
+- Handle time-series data (RNNs, Transformers, CNN+LSTM...)
+- Prototype with PyTorch / TensorFlow / Keras
+- Output predictions of action sequences based on visual + input context
+
+> The model doesn’t need to control the game yet — just learn to **understand and imitate** what a pro player is doing from video + logs.
+
+## 🧠 Tools / Stack
+
+- Python (Jupyter or scripts)
+- PyTorch or TensorFlow
+- OpenCV (optional, for frame analysis)
+- Dataset: `inputs_log.txt` + screen capture
+- Possible modeling: action prediction, behavior cloning
+
+## 📎 More Info
+
+- Demo video: https://youtu.be/I5IRE8fC2_Q
+- Contact: flynx83 on Discord or aimnetv2@gmail.com
+
+> Help us build a first step toward an AI that learns Fortnite by watching like a human.
+
+
+          
+
+
+# 🧱 Unreal Engine 5 Developer Wanted – aimnetv2 Project (for the future) 
+
+**Project:** aimnetv2 – A Fortnite-style AI agent that learns mechanics through observation and self-play.
+
+## 🎯 Objective
+
+We are developing an AI that learns Fortnite 1v1 mechanics by watching pro gameplay and then improves by fighting itself in a custom environment.
+
+for the futur we are gonna enter in the **Phase 2**: building an **Unreal Engine 5 simulation** where the AI can train via self-play (1v1 vs itself) in a Fortnite-inspired arena.
+
+## 🛠️ What we need
+
+- A simplified training arena (walls, ramps, edits, shot simulation)
+- AI-bot input integration (keyboard/mouse emulation or event triggers)
+- Optimization for **50+ concurrent AI matches**
+- Sync with external input/output logs for reinforcement learning
+
+## 💡 References
+
+- OpenAI Five-like environments  
+- OpenGym / RLlib integrations  
+- Multi-agent sandboxing with reward functions
+
+## 📎 More info
+
+- Contact: flynx83 on Discord or aimnetv2@gmail.com  
+- Video demo : https://youtu.be/I5IRE8fC2_Q 
+
+> Let’s build a creative, evolving sparring AI for Fortnite together.  
+> This is a unique chance to work on applied ML + game logic in a real-world esport context.
+
