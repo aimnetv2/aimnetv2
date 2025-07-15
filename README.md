@@ -46,7 +46,8 @@ This allows us to transform gameplay into data readable by machine learning mode
 ---
 
 
-🧠 Learning Phases of aimnetv2 AI
+## 🧠 Learning Phases of aimnetv2 AI
+
 Phase 1 – Observation Learning (Supervised Learning)
 In this initial stage, the AI passively observes gameplay from professional 1v1 Fortnite fights.
 Using structured logs (inputs, timings, positions), the model learns to recognize and replicate human behavior and mechanical patterns such as:
