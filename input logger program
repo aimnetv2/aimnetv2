@@ -1,0 +1,68 @@
+ ##🎮 FortBot Input Logger – Record Fortnite Inputs with Timestamps
+
+This Python script reco#rds keyboard and mouse inputs in real time and saves them to a .txt file, along with timestamps.
+It is designed to create input datasets for AI training in the FortBot AI Project (learn Fortnite mechanics from real gameplay).
+
+ ##🧩 Features
+Records all key presses
+
+Logs mouse clicks and positions
+
+Adds a timestamp to each input
+
+Outputs to a clean fortbot_inputs_log.txt file
+
+ ##📦 Requirements
+ python
+
+ pyunt
+
+ ##📜 How to Use
+Download or create a new Python file (e.g., log_inputs.py)
+
+Paste the code below
+
+Run the script before launching your Fortnite 1v1 or training session
+
+✅ Python Script
+
+from pynput import keyboard, mouse
+from datetime import datetime
+
+log_file = "fortbot_inputs_log.txt"
+
+def write_log(data):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+    with open(log_file, "a") as f:
+        f.write(f"[{timestamp}] {data}\n")
+
+# --- Keyboard events ---
+def on_press(key):
+    try:
+        write_log(f"KEY_PRESS | {key.char}")
+    except AttributeError:
+        write_log(f"KEY_SPECIAL | {key}")
+
+# --- Mouse events ---
+def on_click(x, y, button, pressed):
+    action = "MOUSE_DOWN" if pressed else "MOUSE_UP"
+    write_log(f"{action} | {button} | x:{x} | y:{y}")
+
+# --- Start listeners ---
+kb_listener = keyboard.Listener(on_press=on_press)
+mouse_listener = mouse.Listener(on_click=on_click)
+
+print("🎮 Logging started... Press Enter to stop.")
+kb_listener.start()
+mouse_listener.start()
+
+input()  # Wait for Enter key to stop
+kb_listener.stop()
+mouse_listener.stop()
+print("✅ Logging stopped.")
+
+ ##📂 Output Example (fortbot_inputs_log.txt)
+
+[2025-07-15 16:31:05.123] KEY_PRESS | e
+[2025-07-15 16:31:05.345] MOUSE_DOWN | Button.left | x:1124 | y:618
+[2025-07-15 16:31:05.678] MOUSE_UP | Button.left | x:1124 | y:618
